@@ -37,9 +37,9 @@ class Scoala(commands.Bot):
         os.environ['JISHAKU_EMBEDDED_JSK'] = '1'
         os.environ['JISHAKU_EMBEDDED_JSK_COLOR'] = 'blurple'
 
-        for filename in os.listdir('./cogs'):
-            if filename.endswith('.py'):
-                self.load_extension(f'cogs.{filename[:-3]}')
+        # for filename in os.listdir('./cogs'):
+        #     if filename.endswith('.py'):
+        #         self.load_extension(f'cogs.{filename[:-3]}')
 
         for filename in os.listdir('./reload_cogs'):
             if filename.endswith('.py'):
