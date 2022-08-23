@@ -13,7 +13,7 @@ from utils.views import PaginatedHelpCommand
 TOKEN = os.getenv('BOT_TOKEN')
 
 
-class Okiyu(commands.Bot):
+class Scoala(commands.Bot):
     def __init__(self):
         super().__init__(
             max_messages=100000,
@@ -134,4 +134,4 @@ class Okiyu(commands.Bot):
         return await super().get_context(message, cls=cls)
 
 
-Okiyu().run(TOKEN)
+Scoala().run(TOKEN)
